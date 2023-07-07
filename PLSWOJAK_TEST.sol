@@ -734,7 +734,7 @@ contract PLSWOJAK is Context, IERC20, Ownable {
         
         //pulse mainnet: 0x165C3410fC91EF562C50559f7d2289fEbed552d9
         //pulse testnet: 0xDaE9dd3d1A52CfCe9d5F2fAC7fDe164D500E50f7
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x165C3410fC91EF562C50559f7d2289fEbed552d9);
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xDaE9dd3d1A52CfCe9d5F2fAC7fDe164D500E50f7);
          // Create a uniswap pair for this new token
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
